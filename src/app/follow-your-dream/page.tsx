@@ -13,14 +13,13 @@ import {
   Link,
   useBreakpointValue,
   Center,
-  Flex,
 } from "@chakra-ui/react";
 import { FaSpotify, FaAmazon, FaYoutube, FaCompactDisc } from "react-icons/fa";
 import { SiPandora } from "react-icons/si";
 
 export default function FollowYourDreamPage() {
   const isMobile = useBreakpointValue({ base: true, md: false });
-  
+
   const streamingPlatforms = [
     {
       name: "Spotify",
@@ -108,11 +107,7 @@ export default function FollowYourDreamPage() {
               >
                 Follow Your Dream
               </Text>
-              <Text
-                fontSize="xl"
-                color="whiteAlpha.900"
-                fontWeight="medium"
-              >
+              <Text fontSize="xl" color="whiteAlpha.900" fontWeight="medium">
                 by AnaVue
               </Text>
             </VStack>
@@ -165,11 +160,16 @@ export default function FollowYourDreamPage() {
           </VStack>
         ) : (
           // Desktop/Tablet Layout - Two Columns
-          <Grid templateColumns={{ md: "1fr 1fr" }} gap={12} alignItems="center" minH="70vh">
+          <Grid
+            templateColumns={{ md: "1fr 1fr" }}
+            gap={12}
+            alignItems="center"
+            minH="70vh"
+          >
             <GridItem>
               <AlbumArt />
             </GridItem>
-            
+
             <GridItem>
               <VStack gap={6} alignItems="start">
                 <VStack gap={2} alignItems="start">
@@ -196,14 +196,21 @@ export default function FollowYourDreamPage() {
                     mt={4}
                     lineHeight="1.6"
                   >
-                    A dreamy synth-indie pop journey that captures the essence of chasing your aspirations. 
-                    Let the ethereal melodies guide you towards your dreams.
+                    A dreamy synth-indie pop journey that captures the essence
+                    of chasing your aspirations. Let the ethereal melodies guide
+                    you towards your dreams.
                   </Text>
                 </VStack>
 
                 <Box w="100%" maxW="400px">
                   <VStack gap={3}>
-                    <Text fontSize="lg" fontWeight="semibold" color="white" mb={2} alignSelf="flex-start">
+                    <Text
+                      fontSize="lg"
+                      fontWeight="semibold"
+                      color="white"
+                      mb={2}
+                      alignSelf="flex-start"
+                    >
                       Stream Now
                     </Text>
                     {streamingPlatforms.map((platform) => {

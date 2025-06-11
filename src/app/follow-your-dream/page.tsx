@@ -116,28 +116,6 @@ export default function FollowYourDreamPage() {
       />
 
       <Container maxW="7xl" py={{ base: 8, md: 16 }} position="relative">
-        {/* App Title and Description */}
-        <VStack gap={2} textAlign="center" mb={{ base: 8, md: 12 }}>
-          <Text
-            fontSize={{ base: "2xl", md: "3xl", lg: "4xl" }}
-            fontWeight="bold"
-            color="white"
-            textShadow="2px 2px 4px rgba(0,0,0,0.3)"
-            letterSpacing="-0.01em"
-          >
-            AnaVue
-          </Text>
-          <Text
-            fontSize={{ base: "md", md: "lg" }}
-            color="whiteAlpha.800"
-            fontWeight="medium"
-            textTransform="uppercase"
-            letterSpacing="0.1em"
-          >
-            Dreamy Synth Indie Pop
-          </Text>
-        </VStack>
-
         {/* Mobile Layout - Single Column */}
         <VStack
           gap={8}

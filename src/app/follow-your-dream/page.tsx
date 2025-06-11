@@ -118,12 +118,12 @@ export default function FollowYourDreamPage() {
       <Container maxW="7xl" py={{ base: 8, md: 16 }} position="relative">
         {/* Mobile Layout - Single Column */}
         <VStack
-          gap={8}
+          gap={4}
           alignItems="center"
           display={{ base: "flex", md: "none" }}
           px={{ base: 4, sm: 6 }}
         >
-          <VStack gap={4} textAlign="center">
+          <VStack gap={2} textAlign="center">
             <Text
               fontSize="4xl"
               fontWeight="bold"

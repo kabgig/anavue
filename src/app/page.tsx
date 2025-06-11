@@ -78,6 +78,9 @@ export default function Home() {
                 transition="all 0.3s ease"
                 fontWeight="semibold"
                 backdropFilter="blur(10px)"
+                px={8}
+                py={4}
+                minH="56px"
               >
                 Listen to &ldquo;Follow Your Dream&rdquo;
               </Button>
@@ -95,6 +98,9 @@ export default function Home() {
               }}
               transition="all 0.3s ease"
               fontWeight="semibold"
+              px={8}
+              py={4}
+              minH="56px"
             >
               Explore Music
             </Button>

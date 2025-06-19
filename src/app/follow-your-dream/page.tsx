@@ -1,19 +1,18 @@
 import {
   Box,
+  Button,
+  Center,
   Container,
   Grid,
   GridItem,
-  VStack,
   HStack,
-  Text,
-  Button,
   Link,
-  Center,
+  Text,
+  VStack,
 } from "@chakra-ui/react";
-import Image from "next/image";
-import { FaSpotify, FaAmazon, FaYoutube, FaCompactDisc } from "react-icons/fa";
-import { SiPandora } from "react-icons/si";
 import type { Metadata } from "next";
+import Image from "next/image";
+import { FaAmazon, FaApple, FaSpotify, FaYoutube } from "react-icons/fa";
 
 export const metadata: Metadata = {
   title: "Follow Your Dream - AnaVue | Stream Now",
@@ -40,31 +39,25 @@ export default function FollowYourDreamPage() {
       name: "Spotify",
       icon: FaSpotify,
       color: "#1DB954",
-      url: "#", // Replace with actual Spotify URL
+      url: "https://open.spotify.com/track/0nzbDRy67Bb4zF9brSNp7H?si=dbed429e9864483d",
+    },
+    {
+      name: "Apple Music",
+      icon: FaApple,
+      color: "#FA243C",
+      url: "https://music.apple.com/us/song/follow-your-dream/1821636056",
     },
     {
       name: "Amazon Music",
       icon: FaAmazon,
       color: "#FF9900",
-      url: "#", // Replace with actual Amazon Music URL
-    },
-    {
-      name: "Pandora",
-      icon: SiPandora,
-      color: "#0074E4",
-      url: "#", // Replace with actual Pandora URL
-    },
-    {
-      name: "CD Baby",
-      icon: FaCompactDisc,
-      color: "#1E88E5",
-      url: "#", // Replace with actual CD Baby URL
+      url: "https://amazon.com/music/player/albums/B0FDP2RWRR?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_MR2yOYCkrnx6tTUTbVG3QD7Sx",
     },
     {
       name: "YouTube",
       icon: FaYoutube,
       color: "#FF0000",
-      url: "#", // Replace with actual YouTube URL
+      url: "https://youtu.be/diGW5q0uPTM?si=kVLsY1C2go8jvoW3",
     },
   ];
 
